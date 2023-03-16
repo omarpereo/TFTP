@@ -383,8 +383,8 @@ int init_reception_in_server(char * filename, char * IP_client) {
 
 		opcode_obteined = wait_Block_UDP(( void * )&block_received, &sizereceived, IP_client,6000);
 		printf("\rOPCODE: %u is OK", block_received.opcode);
-		printf("\t#Block: %u", block_received.blocknum);
-		printf("\tSize of last block received: %d", sizereceived);
+		printf("\t#Block: %6.u", block_received.blocknum);
+		printf("\tSize of last block received: %8.d", sizereceived-4);
 
 		if(expected_block == (int) block_received.blocknum) {  	 		// Check if expected received is corrrect
 			printf("\tExpected block is: OK");

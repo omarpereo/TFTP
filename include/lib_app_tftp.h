@@ -5,8 +5,8 @@
 
 #pragma comment(lib,"ws2_32.lib") //Winsock Library
 
-#define BUFLEN 516
-#define SIZE_DATA 512
+#define SIZE_DATA 1420
+#define BUFLEN SIZE_DATA + 4
 #define LENGTH_MAX_FILENAME 256
 
 enum app_mode {
