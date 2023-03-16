@@ -581,7 +581,7 @@ void view_progress_bar(int current,int totalelements, int size_of_bar){
     if(percentage == 100) {
         printf("\n");
     }
-    fflush(stdout); // Flushing del buffer de salida
+    fflush(stdout); // Flushing buffer
 
 
 }
